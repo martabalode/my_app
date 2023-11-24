@@ -11,6 +11,7 @@ st.set_page_config(
 
 query = st.text_input("Search for a GIF")
 url = "https://api.giphy.com/v1/gifs/search"
+
 params= {"api_key": st.secrets.api_key,
          "q": query,
          "limit":10}
