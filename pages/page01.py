@@ -24,6 +24,6 @@ while not query:
 gif_url = response["data"][np.random.randint(0,10)]["embed_url"]
 
 st.write(
-    f'iframe src ="{gif_url}" width="480" height="240">',
+    f'<iframe src ="{gif_url}" width="480" height="240">',
     unsafe_allow_html=True
 )
